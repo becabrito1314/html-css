@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML5</title>
+</head>
+<body>
+  <h1>Imagem dinâmica</h1>  
+  <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminue o tamanho do seu navegador</p>
+  <picture>
+    <source media="(max-width:750px )" srcset="imagens/fotop.png" type="image/png">
+    <source media="(max-width: 1050px )" srcset="imagens/fotom.png">
+    <img src="imagens/fotog.png" alt="Imagem flexivel">
+  </picture>
+  <h1>Reproduzindo audios</h1>
+  <p>Vamos aprender a reproduzir audios em HTML5</p>
+  <audio src="midia/a-vontade-do-fogo--nerd-hits.mp3" controls autoplay></audio>
+  <audio src="midia/o-maior-espadachim-do-mundo--nerd-hits.mp3" controls></audio>
+  <audio>
+    <source srcset="guanacast-33.mp3" type="audio/mpeg">
+    <source srcset="guanacast-33.mp3" type="audio/ogg">
+   <p>Infelizmente seu navegador não consegue reproduzir aúdios</p>
+  </audio>
+  <br>
+  <a href="midia/guanacast-33.mp3">Clique aqui para baixar o arquivo MP3</a>
+  <audio src="midia/guanacast-33.mp3" controls preload="metadata" loop></audio>
+  
+</body>
+</html>
